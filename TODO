@@ -1,0 +1,162 @@
+* Stuff that's going to be done.
+
+  - tintin.sourceforge.net/board/viewtopic.php?t=1761
+
+  - http://tintin.sourceforge.net/board/viewtopic.php?t=1718&highlight=
+
+  - http://tintin.sourceforge.net/board/viewtopic.php?p=6800#6800
+  
+  - http://tintin.sourceforge.net/board/viewtopic.php?t=1738&highlight=
+
+  - UTF-8 stringlen checks in room symbol.
+
+  - Make class kill take regex syntax.
+
+  - Fix double calling of draw vt map.
+
+  - Fix traveling through bend void rooms.
+
+  - Nothing
+
+  http://tintin.sourceforge.net/board/viewtopic.php?p=6648#6648
+
+  - Add prompt received event. Or mark prompts with \x1E aka \036
+
+  - Weirdness with joe
+
+--------------------------------------------------------------------------------
+
+
+* Stuff that might be implemented
+
+  - SGA disabling
+
+  - CHARSET TELOPT support.
+
+  - BINARY TELOPT support.
+
+  - Split pane scrollback
+
+  - Don't eat the path when using #path walk forward, allowing mixed usage of
+    forward and backward. Also add a #MAP START OF PATH event?
+
+  - add #line gag {lines} option or #lines {lines} {gag}.
+
+  - Add something like #log append $dir/logs/log.txt {%D %H:%M:%S} 
+
+--------------------------------------------------------------------------------
+
+
+* Known bugs that need to be fixed.
+
+  - Word wrap related scroll back problems.
+
+  - Crash on multiple session close
+
+  - \x7B\x7D_____\x7B\x7D_ doesn't match in #regex.
+
+* Bugs that might be fixed.
+
+  - There's a bug with prompt repetitions with packet patch set.
+
+  - garbage collection for deleted nodes.
+
+  - Deal with escaping { } / ; in #script variables.
+
+  - Make tintin char setting by session instead of global.
+
+  - #cr doesn't reset the packet patch state
+
+    + tintin.sourceforge.net/board/viewtopic.php?t=36
+
+--------------------------------------------------------------------------------
+
+
+* Mapping related stuff
+
+  - add option to add a delay to each exit for #map run
+
+  - map where command that shows relative coordinates.
+
+  - Room creation event
+
+  - Add better table support for data fields.
+
+  - auto adjust max vnum size of mapper.
+
+  - global flag to only show the same area with the mapper.
+
+  - map color setting for hidden exits.
+
+  - Create global exits, (aka portals) like recall, that can be used
+    with #map run.
+
+  - Add something to indicate a non standard exit on the ASCII mapper.
+
+  - Display hidden exits differently.
+
+  - Better #map undo support using maybe timestamp, type, info.
+
+  - Add conditional if checks for room traversal.
+
+  - add highlight option
+
+  - Add #V version info
+
+--------------------------------------------------------------------------------
+
+
+* Other stuff
+
+
+- look into Launchpad PPA
+
+- Chat server script 'log' option to show last 15 messages.
+
+
+* Other stuff that's not overly interesting
+
+
+- look into getting rid of node->data
+
+- Look into old school automatic packet patching.
+
+- Add a ARG_LEN / ARG_MAX setting.
+
+- Add a #line skip option.
+
+- Proper manual for CHAT and MAP.
+
+
+
+* Stuff for a rainy day
+
+- nestable functions
+
+- Buffer safe strings.
+
+- Fix up ipv6 support in chat.
+
+- Look into packet defragmentation for chat.
+
+- Color code compression, particularly useful with vt map drawing.
+
+- Events for prompt lines.
+
+- Lua scripting
+
+- Look into using speech-dispatcher for text to speech.
+
+- A way to set specific speedwalk delays for exits.
+
+- MXP script http://tintin.sourceforge.net/board/viewtopic.php?t=1396
+
+-------------------------------------------------------------------------------
+
+
+* Stuff that has been request but that I'm not entirely sure about
+
+- Add a command to manipulate the input buffer..
+
+- Keep last input visible with repeat enter enabled.
+
